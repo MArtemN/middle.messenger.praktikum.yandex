@@ -1,0 +1,41 @@
+.button {
+    border: 0;
+    cursor: pointer;
+    transition: .3s all;
+    background: none;
+    &__primary {
+        background-color: $color-base-blue;
+        border-radius: 8px;
+        padding: 12px 70px;
+        @include textM();
+        color: $color-text-white;
+        
+        &:hover {
+            border: 1px solid $color-base-blue;
+            color: $color-base-blue;
+            background-color: $color-bg-white;
+        }
+    }
+    
+    &__link {
+        @include textM();
+        color: $color-base-blue;
+        text-align: center;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &__sign-out {
+        color: $color-error;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &.full-width {
+        width: 100%;
+    }
+}

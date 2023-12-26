@@ -1,0 +1,31 @@
+.personal-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-bg-light-gray;
+    padding-bottom: 10px;
+    
+    &__label-name {
+        @include textM();
+    }
+    
+    &__item {
+        @include textM();
+        color: $color-text-space-gray;
+    }
+    
+    &__item-input {
+        border: 1px solid $color-active-item;
+        border-radius: 5px;
+        padding: 5px;
+        @include textM();
+        
+        &:focus {
+            outline: none;
+        }
+        
+        &::placeholder {
+            text-align: right;
+        }
+    }
+}

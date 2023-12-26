@@ -1,0 +1,10 @@
+.chat-list {
+    &__wrapp {
+        height: calc(100vh - 107px);
+        overflow: auto;
+        
+        &::-webkit-scrollbar {
+            width: 1px;
+        }
+    }
+}

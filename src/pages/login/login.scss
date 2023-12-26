@@ -1,0 +1,21 @@
+.auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    &__input-block {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 50px;
+    }
+    
+    &__btns-block {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: auto;
+    }
+}

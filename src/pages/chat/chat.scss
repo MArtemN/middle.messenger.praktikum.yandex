@@ -1,0 +1,16 @@
+.chat {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    background-color: $color-bg-white;
+    height: 100vh;
+    overflow: hidden;
+    
+    &__list {
+        background-color: $color-bg-dark-white;
+    }
+}
+
+.chat-window {
+    display: grid;
+    grid-template-rows: 71px 1fr 71px;
+}

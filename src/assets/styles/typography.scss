@@ -1,0 +1,53 @@
+@mixin h1() {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-text-black;
+}
+
+@mixin h1-big() {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    color: $color-text-black;
+}
+
+@mixin textS() {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    color: $color-text-black;
+}
+
+@mixin textM() {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    color: $color-text-black;
+}
+
+@mixin textL() {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    color: $color-text-black;
+}
+
+@mixin textL-bold() {
+    @include textL();
+    font-weight: 600;
+}
+
+@mixin text-error {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8px;
+    color: $color-error;
+}

@@ -1,0 +1,21 @@
+<main class="personal">
+    <div class="personal__back">
+        {{> CircleLink arrow="left"}}
+    </div>
+    <div class="personal__content">
+        <div class="personal__avatar-block">
+            {{> PersonalAvatar}}
+        </div>
+        {{#if name}}
+            <div class="personal__name">{{name}}</div>
+        {{/if}}
+        <div class="personal__data-block">
+            {{#each personalDataChangePass}}
+                {{> PersonalInput type="password" editMode="true"}}
+            {{/each}}
+        </div>
+        <div class="personal__btns-block">
+            {{> Button label="Сохранить" type="primary full-width" page="/personal"}}
+        </div>
+    </div>
+</main>

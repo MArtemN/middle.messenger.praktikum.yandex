@@ -1,0 +1,71 @@
+.chat-list-header {
+    padding: 20px 10px 14px;
+    
+    &__go-to-personal {
+        @include textM();
+        text-align: right;
+        
+        a {
+            text-decoration: none;
+            color: $color-text-space-gray;
+            position: relative;
+            padding-right: 16px;
+            text-align: right;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 8px;
+                background: url('./assets/images/chat/arrow.svg') center center no-repeat;
+            }
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    &__search {
+        margin-top: 20px;
+        
+        label {
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 33%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+            }
+            
+            &:has(input:placeholder-shown) {
+                &:before {
+                    background: url('./assets/images/chat/search.svg') center center no-repeat;
+                }
+            }
+        }
+        
+        input {
+            width: 100%;
+            border: 0;
+            background-color: $color-bg-gray;
+            border-radius: 5px;
+            padding: 10px;
+            
+            &::placeholder {
+                text-align: center;
+            }
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

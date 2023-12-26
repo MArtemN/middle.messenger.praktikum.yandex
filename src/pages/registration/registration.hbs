@@ -1,0 +1,17 @@
+<main class="auth-form">
+    {{#> FormAuth title="Регистрация"}}
+        <div class="auth-form__input-block">
+            {{> Input label="Почта" type="text" error="Не верная почта" name="email" }}
+            {{> Input label="Логин" type="text" error="Не верный логин" name="login" }}
+            {{> Input label="Имя" type="text" error="Не верное имя" name="first_name" }}
+            {{> Input label="Фамилия" type="text" error="Не верная фамилия" name="second_name" }}
+            {{> Input label="Телефон" type="text" error="Не верный телефон" name="phone" }}
+            {{> Input label="Пароль" type="password" error="Не верный пароль" name="password" }}
+            {{> Input label="Пароль (еще раз)" type="password" error="Пароли не совпадают" name="password" }}
+        </div>
+        <div class="auth-form__btns-block">
+            {{> Button label="Зарегистрироваться" type="primary" page="/list"}}
+            {{> Button label="Войти" type="link" page="/registration"}}
+        </div>
+    {{/FormAuth}}
+</main>
