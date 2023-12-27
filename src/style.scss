@@ -1,7 +1,6 @@
 // global styles
 @import './assets/styles/normilize';
 @import './assets/styles/global';
-@import './assets/styles/mixins';
 @import './assets/styles/vars';
 @import './assets/styles/typography';
 
@@ -11,9 +10,6 @@
 @import './components/input/input';
 @import './components/button/button';
 @import './components/link/link';
-
-// registration page
-@import './pages/registration/registration';
 
 // 404 page
 @import './pages/404/404';
