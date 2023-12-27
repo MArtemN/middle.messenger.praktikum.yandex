@@ -19,6 +19,7 @@ const personalDataChangePass = [
 ];
 
 const pages = {
+	'/': [ Pages.PagesLinks ],
 	'/login': [ Pages.LoginPage ],
 	'/registration': [ Pages.RegistrationPage ],
 	'/404': [ Pages.Page404 ],
@@ -34,10 +35,6 @@ Object.entries(Components).forEach(([ name, component ]) => {
 });
 
 function navigate(page: string) {
-
-	if (page === '/') {
-		page = '/login';
-	}
 
 	//@ts-ignore
 	const [ source, context ] = pages[page] ?? ['404', 'Page.404'];

@@ -1,0 +1,19 @@
+.pages-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        li {
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

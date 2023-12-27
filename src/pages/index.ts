@@ -6,3 +6,4 @@ export {Personal} from './personal'
 export {PersonalEdit} from './personal-edit'
 export {PersonalChangePass} from './personal-change-pass'
 export {ChatPage} from './chat';
+export {PagesLinks} from './pages-links';

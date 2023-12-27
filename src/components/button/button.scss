@@ -7,11 +7,12 @@
         background-color: $color-base-blue;
         border-radius: 8px;
         padding: 12px 70px;
+        border: 1px solid transparent;
         @include textM();
         color: $color-text-white;
         
         &:hover {
-            border: 1px solid $color-base-blue;
+            border-color: $color-base-blue;
             color: $color-base-blue;
             background-color: $color-bg-white;
         }
