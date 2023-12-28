@@ -4,18 +4,18 @@ import * as Pages from './pages';
 
 // тестовые данные для профиля
 const personalData = [
-	{label: 'Почта', value: 'pochta@yandex.ru'},
-	{label: 'Логин', value: 'ivanivanov'},
-	{label: 'Имя', value: 'Иван'},
-	{label: 'Фамилия', value: 'Иванов'},
-	{label: 'Имя в чате', value: 'Иван'},
-	{label: 'Телефон', value: '+7 (909) 967 30 30'},
+	{label: 'Почта', value: 'pochta@yandex.ru', name: 'email'},
+	{label: 'Логин', value: 'ivanivanov', name: 'login'},
+	{label: 'Имя', value: 'Иван', name: 'first_name'},
+	{label: 'Фамилия', value: 'Иванов', name: 'second_name'},
+	{label: 'Имя в чате', value: 'Иван', name: 'name'},
+	{label: 'Телефон', value: '+7 (909) 967 30 30', name: 'phone'},
 ];
 
 const personalDataChangePass = [
-	{label: 'Старый пароль', value: ''},
-	{label: 'Новый пароль', value: ''},
-	{label: 'Повторите новый пароль', value: ''},
+	{label: 'Старый пароль', value: '', name: 'password'},
+	{label: 'Новый пароль', value: '', name: 'password'},
+	{label: 'Повторите новый пароль', value: '', name: 'password'},
 ];
 
 const pages = {
