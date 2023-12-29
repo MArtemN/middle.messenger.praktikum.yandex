@@ -1,0 +1,8 @@
+<label class="personal-input">
+    <div class="personal-input__label-name">{{label}}</div>
+    {{#if editMode}}
+        <input type="{{type}}" placeholder="{{value}}" class="personal-input__item-input" name="{{name}}">
+    {{else}}
+        <div class="personal-input__item">{{value}}</div>
+    {{/if}}
+</label>

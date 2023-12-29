@@ -1,0 +1,10 @@
+.btn-link {
+    text-decoration: none;
+    @include textM();
+    color: $color-base-blue;
+    text-align: center;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

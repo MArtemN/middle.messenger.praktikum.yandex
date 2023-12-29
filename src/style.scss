@@ -1,0 +1,36 @@
+// global styles
+@import './assets/styles/normilize';
+@import './assets/styles/global';
+@import './assets/styles/vars';
+@import './assets/styles/typography';
+
+// login page
+@import './pages/login/login';
+@import './components/form-auth/form-auth';
+@import './components/input/input';
+@import './components/button/button';
+@import './components/link/link';
+
+// 404 page
+@import './pages/404/404';
+
+// 500 page
+@import './pages/500/500';
+
+// personal page
+@import './pages/personal/personal';
+@import './components/personal/personal-avatar/personal-avatar';
+@import './components/circle-link/circle-link';
+@import './components/personal/personal-input/personal-input';
+
+// chat page
+@import './pages/chat/chat';
+@import './components/chat/list-header/list-header';
+@import './components/chat/list/list';
+@import './components/chat/item/item';
+@import './components/chat/window-header/window-header';
+@import './components/chat/window-content/window-content';
+@import './components/chat/window-footer/window-footer';
+
+// pages links
+@import './pages/pages-links/pages-links';

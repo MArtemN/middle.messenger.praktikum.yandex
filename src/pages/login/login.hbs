@@ -1,0 +1,12 @@
+<main class="auth-form">
+    {{#> FormAuth title="Вход"}}
+        <div class="auth-form__input-block">
+            {{> Input label="Логин" type="text" error="Не верный логин" name="first_name" }}
+            {{> Input label="Пароль" type="password" error="Не верный пароль" name="password" }}
+        </div>
+        <div class="auth-form__btns-block">
+            {{> Button label="Авторизоваться" type="primary" page="/list"}}
+            {{> Button label="Нет аккаунта?" type="link" page="/registration"}}
+        </div>
+    {{/FormAuth}}
+</main>

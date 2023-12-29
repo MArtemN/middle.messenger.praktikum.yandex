@@ -1,0 +1,57 @@
+.chat-window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid $color-bg-light-gray;
+    
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
+    &__name {
+        @include textM();
+        color: $color-text-black;
+    }
+    
+    &__context-menu {
+        padding: 10px;
+        cursor: pointer;
+        
+        .dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: $color-text-black;
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: 0;
+                width: 3px;
+                height: 3px;
+                background-color: $color-text-black;
+                border-radius: 50%;
+            }
+            
+            &:after {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 3px;
+                height: 3px;
+                background-color: $color-text-black;
+                border-radius: 50%;
+            }
+        }
+    }
+}

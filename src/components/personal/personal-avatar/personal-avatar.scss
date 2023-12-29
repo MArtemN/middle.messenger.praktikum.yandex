@@ -1,0 +1,55 @@
+.personal-avatar {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    
+    input {
+        display: none;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    label {
+        cursor: pointer;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130px;
+            height: 130px;
+            background-color: $color-text-black;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .3s all;
+        }
+        
+        &:after {
+            content: 'Заменить аватар';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: $color-text-white;
+            opacity: 0;
+            transition: .3s all;
+        }
+        
+        &:hover {
+            
+            &:before {
+                opacity: .5;
+            }
+            
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}

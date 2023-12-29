@@ -1,0 +1,66 @@
+.input {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        padding-bottom: 7px;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-base-blue;
+        }
+    }
+    
+    &__label {
+        @include textM();
+        color: $color-text-gray;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: .3s all;
+        
+        &:has(+ .input__element:not(:placeholder-shown)) {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    &__element {
+        border: 0;
+        @include textL();
+        
+        &:focus {
+            border: 0;
+            outline: none;
+        }
+        
+        .input__label {
+            color: red;
+        }
+    }
+    
+    &__error-mess {
+        display: none;
+        @include text-error();
+        margin-top: 5px;
+        
+        &_active {
+            display: block;
+        }
+    }
+    
+    &__error {
+        .input__error-mess {
+            display: block;
+        }
+        
+        .input__element[type="password"] {
+            color: $color-error;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.login-form {
+    padding: 50px 30px 30px;
+    width: 340px;
+    min-height: 460px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    &__title {
+        margin: 0;
+        padding: 0;
+        @include h1();
+        text-transform: uppercase;
+    }
+}
